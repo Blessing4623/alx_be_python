@@ -15,10 +15,16 @@ def main():
             pass
         elif choice == "2":
             item = input("Enter item to remove: ")
-            shopping_list.remove(item)
+            for n in shopping_list:
+                if item == n:
+                    shopping_list.remove(item)
+                    break
+            else:
+                print("Item not in shopping list")
             pass
         elif choice == "3":
-            print(shopping_list)
+            for u in shopping_list:
+                print(u)
             pass
         elif choice == "4":
             print("Goodbye")
