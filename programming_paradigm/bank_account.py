@@ -1,15 +1,14 @@
 class BankAccount:
-    def __init__(self, account_balance, initial_balance):
+    def __init__(self, account_balance, initial_balance = 0):
         self.account_balance = account_balance
         self.initial_balance = initial_balance
     def deposit(self, amount):
-        self.amount = int(input("Enter the amount you want to deposit: "))
-        self.account_balance = self.account_balance + self.amount
+        self.account_balance = self.account_balance + amount
     def withdraw(self, amount):
-        self.amount = int(input("Enter the amount you want to withdraw: "))
-        if self.amount <= self.account_balance:
+        
+        if amount <= self.account_balance:
             return True
-            self.account_balance = self.account_balance - self.amount
+            self.account_balance = self.account_balance - amount
         else:
             return False
     def display_balance(self):
