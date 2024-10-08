@@ -7,16 +7,16 @@ class Book:
 
 class EBook(Book):
     def __init__(self, title, author, filesize:int):
-        self.title = title
+        super().__init__(title, author)
         self.filesize = filesize
-        self.author = author
+        
 
 
 
 class PrintBook(Book):
     def __init__(self, title, author, pagecount:int):
-        self.title = title
-        self.author = author
+        
+        super().__init__(title, author)
         self.pagecount = pagecount
 
 class Library:
