@@ -6,18 +6,18 @@ class Book:
         return f"{self.title} by {self.author}"
 
 class EBook(Book):
-    def __init__(self, title, author, filesize:int):
+    def __init__(self, title, author, file_size:int):
         super().__init__(title, author)
-        self.filesize = filesize
+        self.file_size = file_size
         
 
 
 
 class PrintBook(Book):
-    def __init__(self, title, author, pagecount:int):
+    def __init__(self, title, author, page_count:int):
         
         super().__init__(title, author)
-        self.pagecount = pagecount
+        self.page_count = page_count
 
 class Library:
     def __init__(self):
