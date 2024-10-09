@@ -34,4 +34,4 @@ class Library:
         return self.books.append(self.book)
     def list_books(self):
         for bok in self.books:
-            print(f"{bok.title} by {bok.author}")
+            print(bok)
